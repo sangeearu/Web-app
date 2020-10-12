@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>favorite quotes</title>
+	</head>
+	<body>
+		<h1> About</h1>
+
+		{% if quote %}
+			<h2> {{quote}} </h2>
+		{% else %}
+			<h2> No variable quote here..</h2>
+		{% endif %}
+		<h2> My favorite fruits are: </h2>
+		<ul>
+			{% for fruit in fruits %}
+				<li>{{ fruit }}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
